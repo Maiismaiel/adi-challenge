@@ -1,10 +1,8 @@
 ﻿using AdidasChallenge.EndToEndTests.Drivers;
 using FluentAssertions;
-using OpenQA.Selenium;
 using OpenQA.Selenium.Appium;
 using System;
 using System.Collections.ObjectModel;
-using System.Threading;
 using TechTalk.SpecFlow;
 
 namespace AdidasChallenge.EndToEndTests.Steps
@@ -25,6 +23,7 @@ namespace AdidasChallenge.EndToEndTests.Steps
             _productApiDriver = productApiDriver;
         }
 
+        [Scope(Feature = "ProductList")]
         [Given(@"product name is '(.*)' Created")]
         public void GivenProductNameIsCreated(string productName)
         {

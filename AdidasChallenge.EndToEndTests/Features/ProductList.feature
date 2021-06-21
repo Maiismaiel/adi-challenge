@@ -1,5 +1,5 @@
 ﻿Feature: ProductList
-	Simple calculator for adding two numbers
+	Our app should list products added through the product service api
 
 
 Scenario: a Product listed in the home screen
